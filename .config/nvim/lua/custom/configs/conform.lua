@@ -14,6 +14,8 @@ local options = {
 
     go = { "gofumpt", "goimports-reviser", "golines" },
 
+    proto = { "buf" },
+
     sh = { "shfmt" },
   },
 

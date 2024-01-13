@@ -48,18 +48,24 @@ local plugins = {
   },
 
   {
+    "mfussenegger/nvim-lint",
+    lazy = false,
+    config = function()
+      require("lint").linters_by_ft = {
+        proto = { "buf_lint" },
+      }
+      vim.api.nvim_create_autocmd({ "BufWritePost" }, {
+        callback = function()
+          require("lint").try_lint()
+        end,
+      })
+    end,
+  },
+
+  {
     "christoomey/vim-tmux-navigator",
     lazy = false,
   },
-
-  -- {
-  --   "akinsho/bufferline.nvim",
-  --   version = "*",
-  --   dependencies = "nvim-tree/nvim-web-devicons",
-  --   config = function()
-  --     require("bufferline").setup{}
-  --   end,
-  -- },
 
   -- To make a plugin not be loaded
   -- {

@@ -9,7 +9,7 @@ local servers = {
   "cssls",
   "tsserver",
   "tailwindcss",
-  "clangd",
+  -- "clangd",
   "gopls",
 }
 
@@ -29,4 +29,10 @@ lspconfig.eslint.setup {
     on_attach(client, bufnr)
   end,
   capabilities = capabilities,
+}
+
+lspconfig.clangd.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  filetypes = { "c", "cpp", "objc", "objcpp", "cuda" },
 }
