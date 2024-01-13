@@ -118,3 +118,6 @@ export NVM_DIR="$HOME/.nvm"
 alias "v"="nvim"
 alias "vi"="nvim"
 alias "vim"="nvim"
+
+# Alias for clear.
+alias "c"="clear"
