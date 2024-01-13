@@ -121,3 +121,6 @@ alias "vim"="nvim"
 
 # Alias for clear.
 alias "c"="clear"
+
+# Vim manpager.
+export MANPAGER="nvim -c ASMANPAGER -"

@@ -63,6 +63,12 @@ local plugins = {
   },
 
   {
+    "lambdalisue/vim-manpager",
+    lazy = false,
+    cmd = 'ASMANPAGER',
+  },
+
+  {
     "christoomey/vim-tmux-navigator",
     lazy = false,
   },
