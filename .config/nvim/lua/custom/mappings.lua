@@ -10,9 +10,6 @@ M.general = {
     ["<C-j>"] = { "<cmd> TmuxNavigateDown<CR>", "Window down" },
     ["<C-k>"] = { "<cmd> TmuxNavigateUp<CR>", "Window up" },
 
-    ["J"] = { "5j", "Go down 5 lines" },
-    ["K"] = { "5k", "Go up 5 lines" },
-
     --  format with conform
     ["<leader>fm"] = {
       function()
@@ -24,17 +21,6 @@ M.general = {
 
   v = {
     [">"] = { ">gv", "indent" },
-  },
-}
-
-M.lspconfig = {
-  n = {
-    ["zk"] = {
-      function()
-        vim.lsp.buf.hover()
-      end,
-      "LSP hover",
-    },
   },
 }
 
