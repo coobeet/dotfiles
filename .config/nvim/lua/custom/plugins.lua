@@ -65,12 +65,17 @@ local plugins = {
   {
     "lambdalisue/vim-manpager",
     lazy = false,
-    cmd = 'ASMANPAGER',
+    cmd = "ASMANPAGER",
   },
 
   {
     "christoomey/vim-tmux-navigator",
     lazy = false,
+  },
+
+  {
+    "NvChad/nvcommunity",
+    { import = "nvcommunity.motion.neoscroll" },
   },
 
   -- To make a plugin not be loaded
