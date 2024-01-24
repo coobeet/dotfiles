@@ -122,5 +122,9 @@ alias "vim"="nvim"
 # Alias for clear.
 alias "c"="clear"
 
+# Alias for exit.
+alias "x"="exit"
+
 # Vim manpager.
 export MANPAGER="nvim -c ASMANPAGER -"
+export PATH=/Users/bytedance/.local/bin:$PATH
